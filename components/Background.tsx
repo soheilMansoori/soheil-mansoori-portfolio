@@ -26,8 +26,8 @@ export default function Background() {
           >
             <div className='leading-8 text-justify'>
               <p className='text-indigo-600 font-bold text-3xl mb-2'>Who am I?</p>
-              {t('backgroundInfo')}
-            </div>
+              {t('backgroundInfo', { count : 1 })} 
+                         </div>
             <div className='flex gap-20 mt-10'>
               <div className='flex items-center gap-1'>
                 <div className='bg-indigo-600 w-2 h-14 rounded-sm  '></div>

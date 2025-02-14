@@ -72,18 +72,18 @@ export default function Education() {
               className="h-[11em] w-[30%] p-2.5 rounded-xl transition-all duration-300 ease-out hover:bg-indigo-600 hover:text-gray-100 cursor-pointer border-b-2 border-indigo-500"
             >
               <div className='flex flex-col justify-between h-full'>
-                <h1 className="text-lg font-medium text-center">{t(e.title as keyof typeof t)}</h1>
+                <h1 className="text-lg font-medium text-center">{t(e.title as keyof typeof t, { count : 1 })}</h1>
                 <div className='flex flex-col gap-1 text-center'>
                   {e.list.map((i, index) => (
-                    <p key={index} className="text-sm">{t(i as keyof typeof t)}</p>
+                    <p key={index} className="text-sm">{t(i as keyof typeof t, { count : 1 })}</p>
                   ))}
                 </div>
                 <div className='flex text-sm items-center justify-between'>
                   <div className='flex gap-1 items-center'>
                     <Location size='18'/>
-                    <p>{t(e.location as keyof typeof t)}</p>
+                    <p>{t(e.location as keyof typeof t, { count : 1 })}</p>
                   </div>
-                  <p className='text-xs'>{t(e.time as keyof typeof t)}</p>
+                  <p className='text-xs'>{t(e.time as keyof typeof t, { count : 1 })}</p>
                 </div>
               </div>
             </div>

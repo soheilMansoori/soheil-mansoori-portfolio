@@ -1,20 +1,20 @@
 // import { setStaticParamsLocale } from 'next-international/server';
 import Business from '@/components/Business';
-import { getI18n, getScopedI18n, getCurrentLocale } from '../../locales/server';
+// import { getI18n, getScopedI18n, getCurrentLocale } from '../../locales/server';
 // import Client from './client';
-import { Provider } from './provider';
+// import { Provider } from './provider';
 import Education from '@/components/Education';
 import Background from '@/components/Background';
 import Home from '@/components/Home';
 
 
-export default async function HomePage({ params }: { params: Promise<{ locale: string }> }) {
-  const { locale } = await params;
+export default async function HomePage() {
+  // const { locale } = await params;
 
 
-  const t = await getI18n();
+  // const t = await getI18n();
   // const t2 = await getScopedI18n('scope.more');
-  const currentLocale = getCurrentLocale();
+  // const currentLocale = getCurrentLocale();
 
   return (
     <div>

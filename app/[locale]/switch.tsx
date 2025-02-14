@@ -1,13 +1,15 @@
 'use client';
 
 import Image from 'next/image';
-import { useChangeLocale, useCurrentLocale } from '../../locales/client';
+import { useCurrentLocale } from '../../locales/client';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 export function Switch() {
 
-  const changeLocale = useChangeLocale();
-  const currentLocale = useCurrentLocale();  
+  // const changeLocale = useChangeLocale();
+  const router = useRouter()
+  const currentLocale = useCurrentLocale();
   const [langOpen, setLangOpen] = useState<boolean>(false);
 
   return (
@@ -41,7 +43,7 @@ export function Switch() {
             {langOpen && (
               <div className="absolute z-50 w-28 border text-sm rounded-2xl top-10 transition-all left-[-25px] text-white justify-between  bg-gray-700  bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 border-white">
                 <div
-                  onClick={() => changeLocale('fa')}
+                  onClick={() => router.push('/fa')}
                   className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-t-2xl hover:bg-white hover:bg-opacity-10"
                 >
                   <Image
@@ -55,7 +57,7 @@ export function Switch() {
                 </div>
                 <div className="w-full h-[1px] bg-white"></div>
                 <div
-                  onClick={() => changeLocale('en')}
+                  onClick={() => router.push('/en')}
                   className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-b-2xl hover:bg-white hover:bg-opacity-10"
                 >
                   <Image

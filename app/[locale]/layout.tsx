@@ -1,4 +1,4 @@
-import type { ReactElement } from 'react';
+// import type { ReactElement } from 'react';
 import './globals.css';
 import type { ReactNode } from 'react';
 import { Provider } from './provider';

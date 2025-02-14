@@ -30,11 +30,11 @@ export default function Home() {
 
         <ul className='flex gap-5'>
           <li>
-            <Link href={"/"}>{t('home')}</Link>
+            <Link href={"/"}>{t('home', { count : 1 })}</Link>
           </li>
-          <li>{t('background')}</li>
-          <li>{t('education')}</li>
-          <li>{t('business')}</li>
+          <li>{t('background', { count : 1 })}</li>
+          <li>{t('education', { count : 1 })}</li>
+          <li>{t('business', { count : 1 })}</li>
         </ul>
         <Switch/>
       </nav>
@@ -43,8 +43,8 @@ export default function Home() {
       <div className='absolute flex justify-between text-white mt-14 w-[87%] left-1/2 transform -translate-x-1/2'>
         <div className=' leading-none mt-24'>
           <p className='text-xl mb-5'>Hi I'm</p>
-          <h1 className='text-[6rem] font-bold bg-gradient-to-r from-purpl to-white bg-clip-text text-transparent'>{t('name')}</h1>
-          <h1 className='text-[6rem] font-bold bg-gradient-to-r from-purpl to-white bg-clip-text text-transparent'>{t('last')}</h1>
+          <h1 className='text-[6rem] font-bold bg-gradient-to-r from-purpl to-white bg-clip-text text-transparent'>{t('name', { count : 1 })}</h1>
+          <h1 className='text-[6rem] font-bold bg-gradient-to-r from-purpl to-white bg-clip-text text-transparent'>{t('last', { count : 1 })}</h1>
           <div className='flex gap-4 mt-5'>    
             <Link className='p-2 bg-[#0f0f0f] rounded-full border border-purpl' href={"/"}><Call/></Link>
             <Link className='p-2 bg-[#0f0f0f] rounded-full border border-purpl' href={"/"}><Linkedin/></Link>
