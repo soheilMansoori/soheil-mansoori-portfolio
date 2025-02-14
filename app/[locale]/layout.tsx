@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 import './globals.css';
-import { Switch } from './switch';
-import Link from 'next/link';
+import type { ReactNode } from 'react';
+import { Provider } from './provider';
 
 export const metadata = {
   title: 'Create Next App',
@@ -10,25 +10,20 @@ export const metadata = {
 
 
 
-export default function RootLayout({ children }: { children: ReactElement }) {
+export default async function RootLayout({ 
+    params,
+    children,
+  }: {
+    params: Promise<{ locale: string }>;
+    children: ReactNode;
+  }) {
+    
+  const { locale } = await params;
+    
   return (
-    <html lang="en">
+    <html lang="en" dir={locale === 'en' ? 'ltr' : 'rtl'} >
       <body>
-
-        {/* <Switch />
-
-        <ul className='bg-red-500'>
-          <li>
-            <Link href="/">Go to /</Link>
-          </li>
-          <li>
-            <Link href="/subpage">Go to /subpage</Link>
-          </li>
-          <li>
-            <Link href="/client">Go to /client</Link>
-          </li>
-        </ul> */}
-        {children}
+        <Provider locale={locale}>{children}</Provider>
       </body>
     </html>
   );

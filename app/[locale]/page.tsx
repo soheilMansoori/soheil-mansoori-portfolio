@@ -1,7 +1,7 @@
 // import { setStaticParamsLocale } from 'next-international/server';
 import Business from '@/components/Business';
 import { getI18n, getScopedI18n, getCurrentLocale } from '../../locales/server';
-import Client from './client';
+// import Client from './client';
 import { Provider } from './provider';
 import Education from '@/components/Education';
 import Background from '@/components/Background';
