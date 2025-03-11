@@ -41,7 +41,7 @@ export function Switch() {
               )
             }
             {langOpen && (
-              <div className="absolute z-50 w-28 border text-sm rounded-2xl top-10 transition-all left-[-25px] text-white justify-between  bg-gray-700  bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 border-white">
+              <div className="absolute z-50 w-28 border text-sm rounded-2xl top-10 transition-all md:left-[-25px] rtl:left-[-55px] text-white justify-between  bg-gray-700  bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 border-white">
                 <div
                   onClick={() => router.push('/fa')}
                   className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-t-2xl hover:bg-white hover:bg-opacity-10"
