@@ -1,7 +1,7 @@
 export default {
   dr: 'Dr',
-  name: "ARASH",
-  last: "ARYANIK",
+  name: "Arash",
+  last: "Aryanik",
   hello: 'Hello',
   home: 'Home',
   background: 'Background',
@@ -11,9 +11,11 @@ export default {
 
   // ------- Background -------
   WhoAmI: 'About Me',
-  backgroundInfo: '  I believe that a decades-long experience in education and coaching, as well as strong management skills, has signicantly contributed to the academic and practical advancement of my eld of work. Eciency, commitment, enthusiasm, and high motivation are my main characteristics. My ability to establish effective communication with colleagues and students, problemsolving skills, exceptional management techniques, and performance evaluation capabilities have paved the way for success in the elds of education, coaching, and management. With over 20 years of teaching experience in English teaching, I am currently working as a freelancer in the eld of business administration, and also teaching English as an IELTS/TOEFL instructor and language teacher. After two years of work and study in Germany and receiving the CELTA certicate from Cambridge University in Frankfurt, I am now pursuing a PhD in English teaching in Tehran.',
+  backgroundInfo: 'I believe that more than two decades of experience in education and coaching, as well as strong management skills, have signicantly contributed to the academic and practical advancement of my field of work. Efficiency, commitment, enthusiasm, and high motivation are my main characteristics. My ability to establish effective communication with colleagues and learners, problem-solving skills, exceptional management techniques, and performance evaluation capabilities have paved the way for success in the fields of education, coaching, and management. With over 20 years of mentoring and teaching experience, I am currently working as a freelancer in business administration, and also as an English instructor and university lecturer. After two years of work and study in Germany and receiving the CELTA certicate from Cambridge University in Frankfurt, I am now pursuing a PhD in English teaching in Tehran.',
   english: "English" ,
   german: "German" ,
+  persian: "Persian" ,
+  native: 'Native',
   french: "French" ,
   
   
@@ -36,7 +38,7 @@ export default {
   location3 : 'Tehran, Iran',
   time3 : '2022 - 2023',
   
-  title4 : 'Master of English Language Teaching',
+  title4 : 'Master in English Language Teaching',
   list4_1 : 'Applied Linguistics',
   list4_2 : 'Azad University of Isfahan',
   location4 : 'Isfahan, Iran',
@@ -57,7 +59,7 @@ export default {
 
   // ------- Business -------
   box1 : 'Business Development Manager',
-  box1_place: 'Arena Hayat Danesh',
+  box1_place: '???',
   box1_list1: 'Managing and developing import/export with international organizations',
  
   box2 : 'University Lecturer',

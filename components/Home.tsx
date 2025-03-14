@@ -100,7 +100,7 @@ export default function Home() {
         </motion.div>
 
         <motion.div
-          className="static mt-10 md:mt-0 md:absolute w-full flex flex-col-reverse top-0 md:flex-row justify-between text-white md:w-[87%] md:left-1/2 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2"
+          className="static mt-10 md:mt-0 md:absolute w-full flex flex-col-reverse top-0 md:flex-row justify-between items-center text-white md:w-[87%] md:left-1/2 md:top-1/2 transform md:-translate-x-1/2 md:-translate-y-1/2"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: false }}

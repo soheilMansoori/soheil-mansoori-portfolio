@@ -62,6 +62,13 @@ export default function Background() {
                   <p>{t("french", { count: 1 })}</p>
                 </div>
               </div>
+              <div className="flex items-center gap-1">
+                <div className="bg-indigo-600 w-2 h-14 rounded-sm"></div>
+                <div>
+                  <h2 className="font-bold text-4xl">L1</h2>
+                  <p>{t("persian", { count: 1 })}</p>
+                </div>
+              </div>
             </div>
           </motion.div>
           <motion.div
@@ -72,7 +79,7 @@ export default function Background() {
             transition={{ duration: 0.8 }}
           >
             <div className="flex flex-col md:hidden gap-5 tracking-widest">
-              <div className="flex items-center gap-1 ml-8">
+              <div className="flex items-center gap-1  ml-9">
                 <div className="bg-indigo-600 w-2 h-12 rounded-sm"></div>
                 <div>
                   <h2 className="font-bold text-2xl">C2</h2>
@@ -81,18 +88,25 @@ export default function Background() {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-1 ml-4">
+              <div className="flex items-center gap-1  ml-6">
                 <div className="bg-indigo-600 w-2 h-12 rounded-sm"></div>
                 <div>
                   <h2 className="font-bold text-2xl">A2</h2>
                   <p>{t("german", { count: 1 })}</p>
                 </div>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 ml-3">
                 <div className="bg-indigo-600 w-2 h-12 rounded-sm"></div>
                 <div>
                   <h2 className="font-bold text-2xl">A1</h2>
                   <p>{t("french", { count: 1 })}</p>
+                </div>
+              </div>
+              <div className="flex items-center gap-1">
+                <div className="bg-indigo-600 w-2 h-12 rounded-sm"></div>
+                <div>
+                  <h2 className="font-bold text-2xl ">L1</h2>
+                  <p>{t("persian", { count: 1 })}</p>
                 </div>
               </div>
             </div>

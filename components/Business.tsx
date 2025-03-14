@@ -16,21 +16,7 @@ export default function Business() {
         <div className="absolute top-[10%] left-[60%] w-[30%] h-[40%] rotate-45 rounded-full bg-red-500 shadow-red-500 shadow-2xl"></div>
         <div className="absolute h-full w-[100%] bg-whiteBg bg-clip-padding backdrop-filter backdrop-blur-[6rem] bg-opacity-30"></div>
         <div className="w-[90%] h-[80vh] md:h-auto overflow-y-scroll overflow-x-hidden gap-4 relative flex flex-wrap justify-center items-center group cursor-pointer [&::-webkit-scrollbar]:w-2 md:[&::-webkit-scrollbar]:w-0 [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:rounded-full">
-          <motion.div
-            className="relative w-full md:w-[35%] h-32 px-5 py-3 bg-whiteBg rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 group-hover:transition-all group-hover:duration-300 md:group-hover:blur-sm hover:!blur-none overflow-hidden md:hover:h-52 hover:overflow-y-auto flex flex-col justify-start "
-            initial={{ x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: false }}
-            transition={{ duration: 0.7 }}
-          >
-            <div className="flex justify-between ltr:flex-col rtl:flex-row ltr:gap-3">
-              <p className="text-lg font-semibold ">
-                {t("box1", { count: 1 })}
-              </p>
-              <p className="text-sm">{t("box1_place", { count: 1 })}</p>
-            </div>
-            <p className="text-sm mt-1 rtl:mt-3">{t("box1_list1", { count: 1 })}</p>
-          </motion.div>
+
           <motion.div
             className="relative w-full md:w-[35%] h-32 px-5 py-3 bg-whiteBg rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 group-hover:transition-all group-hover:duration-300 md:group-hover:blur-sm hover:!blur-none overflow-hidden md:hover:h-52 hover:overflow-y-auto flex flex-col justify-start "
             initial={{ x: 50 }}
@@ -43,6 +29,21 @@ export default function Business() {
               <p className="text-sm">{t("box2_place", { count: 1 })}</p>
             </div>
             <p className="text-sm mt-1 rtl:mt-3 ">{t("box2_list1", { count: 1 })}</p>
+          </motion.div>
+          <motion.div
+            className="relative w-full md:w-[35%] h-32 px-5 py-3 bg-whiteBg rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 group-hover:transition-all group-hover:duration-300 md:group-hover:blur-sm hover:!blur-none overflow-hidden md:hover:h-52 hover:overflow-y-auto flex flex-col justify-start "
+            initial={{ x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: false }}
+            transition={{ duration: 0.7 }}
+          >
+            <div className="flex justify-between ltr:flex-col rtl:flex-row ltr:gap-3">
+              <p className="text-lg font-semibold">
+                {t("box1", { count: 1 })}
+              </p>
+              <p className="text-sm">{t("box1_place", { count: 1 })}</p>
+            </div>
+            <p className="text-sm mt-1 rtl:mt-3">{t("box1_list1", { count: 1 })}</p>
           </motion.div>
 
           {/* ردیف دوم */}
