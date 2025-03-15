@@ -44,7 +44,7 @@ export default {
   location4 : 'Isfahan, Iran',
   time4 : '2014 - 2017',
   
-  title5 : 'Bachelor of Computer Engineering',
+  title5 : 'Bachelor in Computer Engineering',
   list5_1 : 'Software',
   list5_2 : 'NajafAbad University',
   location5 : 'Isfahan, Iran',
