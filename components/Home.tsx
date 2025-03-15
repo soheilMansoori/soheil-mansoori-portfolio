@@ -141,7 +141,7 @@ export default function Home() {
               </Link>
               <Link
                 className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl"
-                href={"https://wa.me/09103060889"}
+                href={"https://wa.me/+989103060889"}
               >
                 <Whatsapp />
               </Link>
