@@ -60,6 +60,13 @@ export default function Education() {
       location: "location5",
       time: "time5",
     },
+    {
+      id: 6,
+      title: "title6",
+      list: ["list6_1"],
+      location: "location6",
+      time: "time6",
+    },
   ];
 
   return (

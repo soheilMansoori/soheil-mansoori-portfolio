@@ -50,6 +50,10 @@ export default {
   location5 : 'اصفهان، ایران',
   time5 : '۲۰۰۲ - ۲۰۰۷',
 
+  title6 : 'سلتا کمبریج',
+  list6_1 : 'آی اچ فرانکفورت',
+  location6 : 'فرانکفورت, آلمان',
+  time6 : '۲۰۲۳',
 
   EnglishLanguage : 'زبان انگلیسی ',
   BusinessAdministration : 'مدیریت کسب و کار ',

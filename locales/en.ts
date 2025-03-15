@@ -49,6 +49,11 @@ export default {
   list5_2 : 'NajafAbad University',
   location5 : 'Isfahan, Iran',
   time5 : '2002 - 2007',
+  
+  title6 : 'Cambridge CELTA',
+  list6_1 : 'IH Frankfurt',
+  location6 : 'Frankfurt, Germany',
+  time6 : '2023',
 
 
   EnglishLanguage : 'English Language ',
