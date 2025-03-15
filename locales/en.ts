@@ -69,7 +69,7 @@ export default {
  
   box2 : 'University Lecturer',
   box2_place: 'Science and Research University of Tehran',
-  box2_list1: 'Teaching in English teaching, translation, and linguistics departments',
+  box2_list1: 'English teaching, translation, and linguistics departments',
 
   box3 : 'International Relations Manager',
   box3_place: 'Landa Holding',

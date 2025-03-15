@@ -2,6 +2,11 @@ import Business from '@/components/Business';
 import Education from '@/components/Education';
 import Background from '@/components/Background';
 import Home from '@/components/Home';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Arash Aryanik'
+  };
 
 export default async function HomePage() {  
   return (
