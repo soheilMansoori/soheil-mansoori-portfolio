@@ -43,8 +43,8 @@ export default function Home() {
               className="w-10 object-cover"
               src="/images/logo-white.png"
               alt="logo"
-              width={500}
-              height={500}
+              width={400}
+              height={400}
             />
             <div className="opacity-0 transition-all z-20 hidden group-hover:inline-block group-hover:absolute bg-clip-padding backdrop-filter  backdrop-blur-3xl bg-black group-hover:opacity-70 pointer-events-none h-screen w-screen left-1/2 transform -translate-x-1/2 -top-10 rounded-3xl object-cover"></div>
             <Image

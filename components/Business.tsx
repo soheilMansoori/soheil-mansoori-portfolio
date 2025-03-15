@@ -19,7 +19,7 @@ export default function Business() {
 
           <motion.div
             className="relative w-full md:w-[35%] h-32 px-5 py-3 bg-whiteBg rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 group-hover:transition-all group-hover:duration-300 md:group-hover:blur-sm hover:!blur-none overflow-hidden md:hover:h-52 hover:overflow-y-auto flex flex-col justify-start "
-            initial={{ x: 50 }}
+            initial={{ x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7 }}
@@ -32,7 +32,7 @@ export default function Business() {
           </motion.div>
           <motion.div
             className="relative w-full md:w-[35%] h-32 px-5 py-3 bg-whiteBg rounded-2xl bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-40 group-hover:transition-all group-hover:duration-300 md:group-hover:blur-sm hover:!blur-none overflow-hidden md:hover:h-52 hover:overflow-y-auto flex flex-col justify-start "
-            initial={{ x: -50 }}
+            initial={{ x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: false }}
             transition={{ duration: 0.7 }}
