@@ -63,8 +63,8 @@ export default {
 
 
   // ------- Business -------
-  box1 : 'Business Development Manager',
-  box1_place: '???',
+  box1 : 'Business Developer',
+  box1_place: 'Arena Life Science',
   box1_list1: 'Managing and developing import/export with international organizations',
  
   box2 : 'University Lecturer',
@@ -84,11 +84,18 @@ export default {
   box5_list1: 'Managing relations with business partners and domestic organizations',
 
   box6 : 'Education Manager and Supervisor',
-  box6_place: 'Sadr Institute of Higher education',
+  box6_place: 'Sadr Institute of Higher Education',
   box6_list1: 'Designing and planning curricula and syllabi, training and interviewing teachers',
 
   box7 : 'English Language Instructor',
   box7_place: 'Iran Europe, SpeakOn',
   box7_list1: 'Teaching general and academic languages, IELTS, TOEFL, GRE, PTE, CELTA',
 
+  box8 : 'Sourcing Specialist',
+  box8_place: 'Poorchista Medicine',
+  box8_list1: 'Sourcing APIs and international providers and establishing affiliate links',
+
 } as const;
+
+
+
