@@ -2,49 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
 }
 
-
 @keyframes wave {
-  0%, 100% {
-      transform: translateY(0) rotate(0deg);
-  }
-  25% {
-      transform: translateY(-40px) rotate(5deg);
-  }
-  50% {
-      transform: translateY(0) rotate(0deg);
-  }
-  75% {
-      transform: translateY(-40px) rotate(-5deg);
-  }
+ 0%,
+ 100% {
+  transform: translateY(0) rotate(0deg);
+ }
+ 25% {
+  transform: translateY(-40px) rotate(5deg);
+ }
+ 50% {
+  transform: translateY(0) rotate(0deg);
+ }
+ 75% {
+  transform: translateY(-40px) rotate(-5deg);
+ }
 }
 
 .element-wave {
-  animation: wave 8s infinite ease-in-out;
+ animation: wave 8s infinite ease-in-out;
 }
 @keyframes wave-x {
-  0%, 100% {
-      transform: translateX(0) rotate(0deg);
-  }
-  25% {
-      transform: translateX
-    (-40px) rotate(5deg);
-  }
-  50% {
-      transform: translateX
-    (0) rotate(0deg);
-  }
-  75% {
-      transform: translateX
-    (-40px) rotate(-5deg);
-  }
+ 0%,
+ 100% {
+  transform: translateX(0) rotate(0deg);
+ }
+ 25% {
+  transform: translateX (-40px) rotate(5deg);
+ }
+ 50% {
+  transform: translateX (0) rotate(0deg);
+ }
+ 75% {
+  transform: translateX (-40px) rotate(-5deg);
+ }
 }
 
 .element-wave-x {
-  animation: wave-x 8s infinite ease-in-out;
+ animation: wave-x 8s infinite ease-in-out;
 }
