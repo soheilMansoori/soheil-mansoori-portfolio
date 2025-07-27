@@ -1,15 +1,14 @@
 "use client";
+import Location from "@/icons/Location";
 import { useI18n } from "@/locales/client";
-import Location from "@/public/icons/Location";
-import React, { useRef } from "react";
 import { motion } from "framer-motion";
+import { useWindowWidth } from "./UseWindowWidth";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Grid, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/grid";
-import { useWindowWidth } from "./UseWindowWidth";
 
 interface EducationTypes {
   id: number;
@@ -21,8 +20,7 @@ interface EducationTypes {
 
 export default function Education() {
   const t = useI18n();
-  const width = useWindowWidth()
-
+  const width = useWindowWidth();
 
   const educationList: EducationTypes[] = [
     {
@@ -114,7 +112,7 @@ export default function Education() {
             ))}
           </motion.div>
 
-          { width < 500 &&
+          {width < 500 && (
             <Swiper
               slidesPerView={1}
               modules={[Grid, Pagination]}
@@ -155,7 +153,7 @@ export default function Education() {
                 </SwiperSlide>
               ))}
             </Swiper>
-          }
+          )}
 
           <div className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]">
             <motion.div

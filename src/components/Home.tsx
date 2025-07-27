@@ -2,16 +2,16 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import Link from "next/link";
-import Call from "../public/icons/Call";
-import Linkedin from "../public/icons/Linkedin";
-import Mail from "../public/icons/Mail";
+import Call from "@/icons/Call";
+import Linkedin from "@/icons/Linkedin";
+import Mail from "@/icons/Mail";
+import Whatsapp from "@/icons/Whatsapp";
+import Instagram from "@/icons/Instagram";
+import Berger from "@/icons/Berger";
+import ArrowRight from "@/icons/ArrowRight";
 import { Switch } from "@/app/[locale]/switch";
-import { useI18n } from "@/locales/client";
-import Whatsapp from "@/public/icons/Whatsapp";
-import Instagram from "@/public/icons/Instagram";
 import { motion } from "framer-motion";
-import Berger from "@/public/icons/Berger";
-import ArrowRight from "@/public/icons/ArrowRight";
+import { useI18n } from "@/locales/client";
 
 export default function Home() {
   const t = useI18n();
@@ -167,7 +167,9 @@ export default function Home() {
 
         <div
           className={`flex flex-col text-2xl gap-2 text-white px-5 py-20 md:hidden absolute h-screen w-[75%] bg-blackBg  top-0 transition-all duration-300 z-20 ${
-            drawerOpen ? "ltr:left-0 rtl:right-0" : "ltr:left-[-75%] rtl:right-[-75%]"
+            drawerOpen
+              ? "ltr:left-0 rtl:right-0"
+              : "ltr:left-[-75%] rtl:right-[-75%]"
           }`}
         >
           <div className="cursor-pointer flex justify-between">
@@ -208,10 +210,11 @@ export default function Home() {
         <div
           onClick={() => setDrawerOpen(false)}
           className={`flex flex-col md:hidden p-3 absolute h-screen w-[25%] bg-black opacity-50 top-0 transition-all duration-300 z-20 ${
-            drawerOpen ? "ltr:right-0 rtl:left-0" : "ltr:right-[-25%] rtl:left-[-25%]"
+            drawerOpen
+              ? "ltr:right-0 rtl:left-0"
+              : "ltr:right-[-25%] rtl:left-[-25%]"
           }`}
-        >
-        </div>
+        ></div>
       </div>
     </div>
   );

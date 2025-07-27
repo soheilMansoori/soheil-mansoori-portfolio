@@ -5,13 +5,8 @@ export const useWindowWidth = () => {
 
   useEffect(() => {
     const handleResize = () => setWidth(window.innerWidth);
-    
-    // مقدار اولیه
     setWidth(window.innerWidth);
-
-    // لیسنر برای تغییر اندازه صفحه
     window.addEventListener("resize", handleResize);
-    
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
