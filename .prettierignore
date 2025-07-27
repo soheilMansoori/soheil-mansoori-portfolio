@@ -1,0 +1,20 @@
+# Ignore build outputs
+dist/
+build/
+
+# Ignore node modules
+node_modules/
+
+# Ignore configuration files
+*.config.js
+*.config.ts
+
+# Ignore JSON files
+*.json
+
+# Ignore logs and temp files
+*.log
+temp/
+
+# Ignore .next
+.next
