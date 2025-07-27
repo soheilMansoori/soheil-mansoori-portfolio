@@ -1,10 +1,7 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  experimental: {
-    fontLoaders: [
-      { loader: "@next/font/google", options: { subsets: ["latin"] } },
-    ],
-  },
-};
+import { NextConfig } from 'next';
+import createNextIntlPlugin from 'next-intl/plugin';
 
-module.exports = nextConfig;
+const nextConfig: NextConfig = {};
+
+const withNextIntl = createNextIntlPlugin();
+export default withNextIntl(nextConfig);
