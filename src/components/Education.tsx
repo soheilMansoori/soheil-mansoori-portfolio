@@ -1,14 +1,14 @@
 'use client';
 import Location from '@/icons/Location';
-import { useI18n } from '@/locales/client';
 import { motion } from 'framer-motion';
-import { useWindowWidth } from './UseWindowWidth';
+import { useWindowWidth } from '../hooks/UseWindowWidth';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/grid';
+import { useTranslations } from 'next-intl';
 
 interface EducationTypes {
  id: number;
@@ -19,7 +19,7 @@ interface EducationTypes {
 }
 
 export default function Education() {
- const t = useI18n();
+ const t = useTranslations();
  const width = useWindowWidth();
 
  const educationList: EducationTypes[] = [

@@ -9,12 +9,12 @@ import Whatsapp from '@/icons/Whatsapp';
 import Instagram from '@/icons/Instagram';
 import Berger from '@/icons/Berger';
 import ArrowRight from '@/icons/ArrowRight';
-import { Switch } from '@/app/[locale]/switch';
+import { Switch } from '@/components/Switch';
 import { motion } from 'framer-motion';
-import { useI18n } from '@/locales/client';
+import { useTranslations } from 'next-intl';
 
 export default function Home() {
- const t = useI18n();
+ const t = useTranslations();
 
  const handleScroll = (id: string) => {
   const section = document.getElementById(id);

@@ -1,9 +1,9 @@
 'use client';
-import { useI18n } from '@/locales/client';
 import { motion } from 'framer-motion';
+import { useTranslations } from 'next-intl';
 
 export default function Business() {
- const t = useI18n();
+ const t = useTranslations();
 
  return (
   <div id="business" className="w-full snap-start bg-whiteBg overflow-hidden">
