@@ -3,4 +3,4 @@ export const LOCALE = {
  FA: 'fa',
 };
 export const LOCALES = Object.values(LOCALE);
-export const defaultLocale = LOCALE.EN;
+export const DEFAULT_LOCALE = LOCALE.EN;
