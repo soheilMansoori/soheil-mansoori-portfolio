@@ -26,12 +26,18 @@ export function Switch() {
      )}
      {isDropDownOpen && (
       <div className="absolute z-50 w-28 border text-sm rounded-2xl top-10 transition-all md:left-[-25px] rtl:left-[-55px] text-white justify-between  bg-gray-700  bg-clip-padding backdrop-filter backdrop-blur-2xl bg-opacity-20 border-white">
-       <div onClick={() => router.push('/fa')} className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-t-2xl hover:bg-white hover:bg-opacity-10">
+       <div
+        onClick={() => (locale !== LOCALE.FA ? router.push('/fa') : null)}
+        className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-t-2xl hover:bg-white hover:bg-opacity-10"
+       >
         <Image className="size-6 rounded-full" src="/images/iran.png" width={100} height={100} alt="Logo" />
         <p>{LOCALE.FA}</p>
        </div>
        <div className="w-full h-[1px] bg-white"></div>
-       <div onClick={() => router.push('/en')} className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-b-2xl hover:bg-white hover:bg-opacity-10">
+       <div
+        onClick={() => (locale !== LOCALE.EN ? router.push('/en') : null)}
+        className="flex justify-between cursor-pointer gap-2 items-center px-5 py-2 rounded-b-2xl hover:bg-white hover:bg-opacity-10"
+       >
         <Image className="size-6 rounded-full" src="/images/usa.png" width={100} height={100} alt="Logo" />
         <p>{LOCALE.EN}</p>
        </div>
