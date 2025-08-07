@@ -113,5 +113,62 @@
   ]
  },
  "projects": {},
- "experience": {}
+ "skills": [
+  {
+   "id": 1,
+   "percent": 85,
+   "name": "Next.js",
+   "title": "توسعه‌دهنده نکست",
+   "description": "با Next.js در پروژه‌های SSR و SSG کار کردم. این فریم‌ورک رو برای ساخت وب‌سایت‌های سریع، سئو محور و مقیاس‌پذیر استفاده می‌کنم."
+  },
+  {
+   "id": 2,
+   "percent": 70,
+   "name": "Docker",
+   "title": "آشنایی با Docker",
+   "description": "برای کانتینرایز کردن اپلیکیشن‌ها از Docker استفاده می‌کنم و تجربه‌ی ساخت ایمیج و اجرای سرویس‌ها در محیط‌های مجزا دارم."
+  },
+  {
+   "id": 3,
+   "percent": 90,
+   "name": "React",
+   "title": "متخصص React",
+   "description": "بیش از سه سال با React کار کردم. در پروژه‌های مختلف از مفاهیم پیشرفته مثل هوک‌ها، Context API و مدیریت وضعیت استفاده کردم."
+  },
+  {
+   "id": 4,
+   "percent": 85,
+   "name": "Tailwind CSS",
+   "title": "طراح رابط کاربری با Tailwind",
+   "description": "برای طراحی سریع و واکنش‌گرا از Tailwind استفاده می‌کنم و در اکثر پروژه‌هام ازش بهره بردم."
+  },
+  {
+   "id": 5,
+   "percent": 80,
+   "name": "TypeScript",
+   "title": "برنامه‌نویس TypeScript",
+   "description": "برای نوشتن کدهای امن‌تر و مقیاس‌پذیرتر از TypeScript استفاده می‌کنم. با انواع، اینترفیس‌ها و ژنریک‌ها آشنایی دارم."
+  },
+  {
+   "id": 6,
+   "percent": 75,
+   "name": "Redux",
+   "title": "مدیریت وضعیت با Redux",
+   "description": "در پروژه‌هایی که نیاز به مدیریت وضعیت پیچیده داشتن از Redux استفاده کردم، با Redux Toolkit هم آشنا هستم."
+  },
+  {
+   "id": 7,
+   "percent": 80,
+   "name": "Node.js & Express",
+   "title": "برنامه‌نویس Node و Express",
+   "description": "برای توسعه‌ی سمت سرور از Node.js و Express استفاده می‌کنم، و در ساخت API‌های RESTful تجربه دارم."
+  },
+  {
+   "id": 8,
+   "percent": 95,
+   "name": "HTML & CSS",
+   "title": "توسعه‌دهنده HTML و CSS",
+   "description": "تسلط کامل به HTML و CSS دارم و از آن‌ها برای ساخت رابط‌های کاربری تمیز و واکنش‌گرا استفاده می‌کنم."
+  }
+ ]
 }

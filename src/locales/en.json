@@ -89,30 +89,87 @@
    {
     "id": 1,
     "name": "Next",
-    "percent" : 60
+    "percent": 60
    },
    {
     "id": 2,
     "name": "React",
-    "percent" : 70
+    "percent": 70
    },
    {
     "id": 3,
     "name": "Redux",
-    "percent" : 60
+    "percent": 60
    },
    {
     "id": 4,
     "name": "Tailwind",
-    "percent" : 70
+    "percent": 70
    },
    {
     "id": 5,
     "name": "TypeScript",
-    "percent" : 80
+    "percent": 80
    }
   ]
  },
  "projects": {},
- "experience": {}
+ "skills": [
+  {
+   "id": 1,
+   "percent": 85,
+   "name": "Next.js",
+   "title": "Next.js Developer",
+   "description": "Worked with Next.js for SSR and SSG projects. I use it to build fast, SEO-friendly, and scalable web apps."
+  },
+  {
+   "id": 2,
+   "percent": 70,
+   "name": "Docker",
+   "title": "Docker Familiarity",
+   "description": "I use Docker to containerize applications and have experience building images and running services in isolated environments."
+  },
+  {
+   "id": 3,
+   "percent": 90,
+   "name": "React",
+   "title": "React Specialist",
+   "description": "I have over 3 years of experience with React, using hooks, Context API, and state management in real-world projects."
+  },
+  {
+   "id": 4,
+   "percent": 85,
+   "name": "Tailwind CSS",
+   "title": "Tailwind UI Designer",
+   "description": "I use Tailwind CSS for fast, responsive UI design and have implemented it in most of my frontend projects."
+  },
+  {
+   "id": 5,
+   "percent": 80,
+   "name": "TypeScript",
+   "title": "TypeScript Developer",
+   "description": "I use TypeScript to write safer and more scalable code, with experience in types, interfaces, and generics."
+  },
+  {
+   "id": 6,
+   "percent": 75,
+   "name": "Redux",
+   "title": "State Manager with Redux",
+   "description": "I’ve used Redux in complex state management scenarios and have experience with Redux Toolkit as well."
+  },
+  {
+   "id": 7,
+   "percent": 80,
+   "name": "Node.js & Express",
+   "title": "Node & Express Developer",
+   "description": "I use Node.js and Express for backend development and have experience building RESTful APIs."
+  },
+  {
+   "id": 8,
+   "percent": 95,
+   "name": "HTML & CSS",
+   "title": "HTML & CSS Developer",
+   "description": "I have strong command of HTML and CSS, and use them to build clean, responsive interfaces."
+  }
+ ]
 }
