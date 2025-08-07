@@ -87,23 +87,28 @@
   "frameworks": [
    {
     "id": 1,
-    "name": "ری‌اکت"
+    "name": "Next",
+    "percent": 60
    },
    {
     "id": 2,
-    "name": "نکست"
+    "name": "React",
+    "percent": 70
    },
    {
     "id": 3,
-    "name": "ری‌داکس"
+    "name": "Redux",
+    "percent": 60
    },
    {
     "id": 4,
-    "name": "تیلویند"
+    "name": "Tailwind",
+    "percent": 70
    },
    {
     "id": 5,
-    "name": "تایپ‌اسکریپت"
+    "name": "TypeScript",
+    "percent": 80
    }
   ]
  },

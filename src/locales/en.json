@@ -71,7 +71,6 @@
  "box8": "Sourcing Specialist",
  "box8_place": "Poorchista Medicine",
  "box8_list1": "Sourcing APIs and international providers and establishing affiliate links",
-
  "navbar": {
   "introduction": "Introduction",
   "about": "About",
@@ -89,23 +88,28 @@
   "frameworks": [
    {
     "id": 1,
-    "name": "React"
+    "name": "Next",
+    "percent" : 60
    },
    {
     "id": 2,
-    "name": "Next"
+    "name": "React",
+    "percent" : 70
    },
    {
     "id": 3,
-    "name": "Redux"
+    "name": "Redux",
+    "percent" : 60
    },
    {
     "id": 4,
-    "name": "Tailwind"
+    "name": "Tailwind",
+    "percent" : 70
    },
    {
     "id": 5,
-    "name": "TypeScript"
+    "name": "TypeScript",
+    "percent" : 80
    }
   ]
  },
