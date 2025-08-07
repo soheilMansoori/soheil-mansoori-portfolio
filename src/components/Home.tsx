@@ -2,19 +2,16 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import Call from '@/icons/Call';
-import Linkedin from '@/icons/Linkedin';
-import Mail from '@/icons/Mail';
-import Whatsapp from '@/icons/Whatsapp';
-import Instagram from '@/icons/Instagram';
 import Berger from '@/icons/Berger';
 import ArrowRight from '@/icons/ArrowRight';
 import { Switch } from '@/components/Switch';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { SOCIAL_LINKS } from '@/constants';
 
 export default function Home() {
- const t = useTranslations();
+ const navbarTranslation = useTranslations('navbar');
+ const introductionTranslation = useTranslations('introduction');
 
  const handleScroll = (id: string) => {
   const section = document.getElementById(id);
@@ -51,15 +48,15 @@ export default function Home() {
      </div>
 
      <ul className="flex gap-5">
-      <li className="cursor-pointer">{t('home', { count: 1 })}</li>
+      <li className="cursor-pointer">{navbarTranslation('introduction')}</li>
       <li className="cursor-pointer" onClick={() => handleScroll('background')}>
-       {t('background', { count: 1 })}
+       {navbarTranslation('about')}
       </li>
       <li className="cursor-pointer" onClick={() => handleScroll('education')}>
-       {t('education', { count: 1 })}
+       {navbarTranslation('projects')}
       </li>
       <li className="cursor-pointer" onClick={() => handleScroll('business')}>
-       {t('business', { count: 1 })}
+       {navbarTranslation('experience')}
       </li>
      </ul>
      <Switch />
@@ -86,30 +83,17 @@ export default function Home() {
      transition={{ duration: 1 }}
     >
      <div className="w-[90%] mx-auto md:w-full leading-none ltr:mt-10 md:mt-24 rtl:pt-14">
-      <p className="text-xl rtl:mb-4 px-4 md:px-0">{t('dr', { count: 1 })}</p>
+      <p className="text-xl rtl:mb-4 px-4 md:px-0">{introductionTranslation('job')}</p>
       <div className="flex justify-center rtl:gap-2 rtl:flex-row md:w-[60%] flex-row md:flex-col bg-gradient-to-r ltr:from-purpl rtl:from-white ltr:to-white rtl:to-purpl bg-clip-text text-transparent">
-       <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 ltr:pr-2 md:px-0 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{t('name', { count: 1 })}</h1>
-       <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{t('last', { count: 1 })}</h1>
+       <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 ltr:pr-2 md:px-0 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{introductionTranslation('name')}</h1>
+       <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{introductionTranslation('family')}</h1>
       </div>
       <div className="flex justify-center md:justify-normal gap-4 mt-10 md:mt-5 md:rtl:mt-8 ">
-       <Link className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl" href={'tel:09103060889'}>
-        <Call />
-       </Link>
-       <Link
-        className="p-2  bg-[#0f0f0f] rounded-full border border-purpl"
-        href={'https://www.linkedin.com/in/arash-aryanik-58b97885?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'}
-       >
-        <Linkedin />
-       </Link>
-       <Link className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl" href={'mailto:arash.aryanik@gmail.com'}>
-        <Mail />
-       </Link>
-       <Link className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl" href={'https://wa.me/+989103060889'}>
-        <Whatsapp />
-       </Link>
-       <Link className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl" href={'https://www.instagram.com/arasharyanik?igsh=ZjVvc3IwYm1nMG8y'}>
-        <Instagram />
-       </Link>
+       {Object.values(SOCIAL_LINKS).map(({ url, Icon }) => (
+        <Link key={url} href={url} className="p-2 px-[9px] bg-[#0f0f0f] rounded-full border border-purpl">
+         {Icon}
+        </Link>
+       ))}
       </div>
      </div>
 
@@ -122,37 +106,38 @@ export default function Home() {
      }`}
     >
      <div className="cursor-pointer flex justify-between">
-      <p>{t('home', { count: 1 })}</p>
+      <p>{navbarTranslation('introduction')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
      <div className="cursor-pointer flex justify-between" onClick={() => handleScroll('background')}>
-      <p>{t('background', { count: 1 })}</p>
+      <p>{navbarTranslation('about')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
      <div className="cursor-pointer flex justify-between" onClick={() => handleScroll('education')}>
-      <p>{t('education', { count: 1 })}</p>
+      <p>{navbarTranslation('projects')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
      <div className="cursor-pointer flex justify-between mb-5" onClick={() => handleScroll('business')}>
-      <p>{t('business', { count: 1 })}</p>
+      <p>{navbarTranslation('experience')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
      <Switch />
     </div>
+
     <div
      onClick={() => setDrawerOpen(false)}
      className={`flex flex-col md:hidden p-3 absolute h-screen w-[25%] bg-black opacity-50 top-0 transition-all duration-300 z-20 ${
       drawerOpen ? 'ltr:right-0 rtl:left-0' : 'ltr:right-[-25%] rtl:left-[-25%]'
      }`}
-    ></div>
+    />
    </div>
   </div>
  );
