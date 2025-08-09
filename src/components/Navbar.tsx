@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Berger from '@/icons/Berger';
 import ArrowRight from '@/icons/ArrowRight';
 import { PropsWithChildren } from 'react';
@@ -7,19 +6,20 @@ import { useState } from 'react';
 import { Switch } from '@/components/Switch';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { SOCIAL_LINKS } from '@/constants';
+import { SECTIONS } from '@/constants';
+
+type SectionId = (typeof SECTIONS)[keyof typeof SECTIONS];
 
 export default function Navbar({ children }: PropsWithChildren) {
  const t = useTranslations('navbar');
+ const [drawerOpen, setDrawerOpen] = useState(false);
 
- const handleScroll = (id: string) => {
+ const scrollToSection = (id: SectionId) => {
   const section = document.getElementById(id);
   if (section) {
    section.scrollIntoView({ behavior: 'smooth' });
   }
  };
-
- const [drawerOpen, setDrawerOpen] = useState(false);
 
  return (
   <div className="w-full snap-start bg-blackBg overflow-hidden">
@@ -48,14 +48,14 @@ export default function Navbar({ children }: PropsWithChildren) {
      </div>
 
      <ul className="flex gap-5">
-      <li className="cursor-pointer">{t('introduction')}</li>
-      <li className="cursor-pointer" onClick={() => handleScroll('background')}>
+      <li className="cursor-pointer">{t(SECTIONS.INTRODUCTION)}</li>
+      <li className="cursor-pointer" onClick={() => scrollToSection(SECTIONS.ABOUT)}>
        {t('about')}
       </li>
-      <li className="cursor-pointer" onClick={() => handleScroll('education')}>
+      <li className="cursor-pointer" onClick={() => scrollToSection(SECTIONS.EXPERIENCE)}>
        {t('projects')}
       </li>
-      <li className="cursor-pointer" onClick={() => handleScroll('business')}>
+      <li className="cursor-pointer" onClick={() => scrollToSection(SECTIONS.SKILLS)}>
        {t('experience')}
       </li>
      </ul>
@@ -91,19 +91,19 @@ export default function Navbar({ children }: PropsWithChildren) {
        <ArrowRight />
       </div>
      </div>
-     <div className="cursor-pointer flex justify-between" onClick={() => handleScroll('background')}>
+     <div className="cursor-pointer flex justify-between" onClick={() => scrollToSection(SECTIONS.ABOUT)}>
       <p>{t('about')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
-     <div className="cursor-pointer flex justify-between" onClick={() => handleScroll('education')}>
+     <div className="cursor-pointer flex justify-between" onClick={() => scrollToSection(SECTIONS.EXPERIENCE)}>
       <p>{t('projects')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
       </div>
      </div>
-     <div className="cursor-pointer flex justify-between mb-5" onClick={() => handleScroll('business')}>
+     <div className="cursor-pointer flex justify-between mb-5" onClick={() => scrollToSection(SECTIONS.SKILLS)}>
       <p>{t('experience')}</p>
       <div className="rtl:rotate-180">
        <ArrowRight />
