@@ -3,10 +3,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
-import { SOCIAL_LINKS } from '@/constants';
+import { SOCIAL_LINKS, SECTIONS } from '@/constants';
 
 export default function Introduction() {
- const t = useTranslations('introduction');
+ const t = useTranslations(SECTIONS.INTRODUCTION);
 
  return (
   <motion.div

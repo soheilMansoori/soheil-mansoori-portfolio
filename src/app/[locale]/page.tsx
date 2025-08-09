@@ -1,7 +1,8 @@
+import Navbar from '@/components/Navbar';
+import Introduction from '@/components/Introduction';
 import Business from '@/components/Business';
 import Education from '@/components/Education';
 import Background from '@/components/Background';
-import Home from '@/components/Introduction';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,7 +13,9 @@ export default async function HomePage() {
  return (
   <div>
    <main className="h-screen snap-y snap-mandatory overflow-y-scroll  [&::-webkit-scrollbar]:w-0 ">
-    <Home />
+    <Navbar>
+     <Introduction />
+    </Navbar>
     <Background />
     <Education />
     <Business />
