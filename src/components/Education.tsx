@@ -103,6 +103,7 @@ export default function Education() {
       ))}
      </motion.div>
 
+     {/* responsive slider */}
      {width < 500 && (
       <Swiper
        slidesPerView={1}
@@ -143,7 +144,7 @@ export default function Education() {
      )}
 
      {/* skills progress wrapper */}
-     <div className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]">
+     <div style={{ direction: 'ltr' }} className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]">
       {skills.map(({ id, name, percent }) => (
        <motion.div key={id} className="w-full md:w-[45%]" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
         <div className="flex justify-between">
