@@ -1,7 +1,7 @@
 import Business from '@/components/Business';
 import Education from '@/components/Education';
 import Background from '@/components/Background';
-import Home from '@/components/Home';
+import Home from '@/components/Introduction';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
