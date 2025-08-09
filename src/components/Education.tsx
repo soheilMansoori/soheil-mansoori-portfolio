@@ -21,6 +21,7 @@ interface EducationTypes {
 export default function Education() {
  const t = useTranslations();
  const width = useWindowWidth();
+ const skills = (t.raw('skills') as { id: number; percent: number; name: string }[]) || [];
 
  const educationList: EducationTypes[] = [
   {
@@ -141,43 +142,19 @@ export default function Education() {
       </Swiper>
      )}
 
+     {/* skills progress wrapper */}
      <div className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]">
-      <motion.div className="w-full md:w-[45%]" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
-       <div className="flex justify-between">
-        <h1>{t('EnglishLanguage', { count: 1 })}</h1>
-        <h1>100%</h1>
-       </div>
-       <div className="w-full bg-white rounded-xl h-3 mt-1">
-        <div className="bg-indigo-500 h-3 rounded-xl" style={{ width: '100%' }}></div>
-       </div>
-      </motion.div>
-      <motion.div className="w-full md:w-[45%]" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
-       <div className="flex justify-between">
-        <h1>{t('BusinessAdministration', { count: 1 })}</h1>
-        <h1>90%</h1>
-       </div>
-       <div className="w-full bg-white rounded-xl h-3 mt-1">
-        <div className="bg-indigo-500 h-3 rounded-xl" style={{ width: '90%' }}></div>
-       </div>
-      </motion.div>
-      <motion.div className="w-full md:w-[45%]" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
-       <div className="flex justify-between">
-        <h1>{t('ComputerSkills', { count: 1 })}</h1>
-        <h1>90%</h1>
-       </div>
-       <div className="w-full bg-white rounded-xl h-3 mt-1">
-        <div className="bg-indigo-500 h-3 rounded-xl" style={{ width: '90%' }}></div>
-       </div>
-      </motion.div>
-      <motion.div className="w-full md:w-[45%]" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
-       <div className="flex justify-between">
-        <h1>{t('LanguageTeachingSkills', { count: 1 })}</h1>
-        <h1>100%</h1>
-       </div>
-       <div className="w-full bg-white rounded-xl h-3 mt-1">
-        <div className="bg-indigo-500 h-3 rounded-xl" style={{ width: '100%' }}></div>
-       </div>
-      </motion.div>
+      {skills.map(({ id, name, percent }) => (
+       <motion.div key={id} className="w-full md:w-[45%]" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
+        <div className="flex justify-between">
+         <h1>{name}</h1>
+         <h1>{percent}%</h1>
+        </div>
+        <div className="w-full bg-white rounded-xl h-3 mt-1">
+         <div className="bg-indigo-500 h-3 rounded-xl" style={{ width: `${percent}%` }}></div>
+        </div>
+       </motion.div>
+      ))}
      </div>
     </div>
    </div>
