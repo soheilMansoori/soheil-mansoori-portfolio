@@ -1,10 +1,11 @@
 'use client';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { SECTIONS } from '@/constants';
 
-export default function Business() {
+export default function Skills() {
  const t = useTranslations();
- const skills = t.raw('skills') as {
+ const skills = t.raw(SECTIONS.SKILLS) as {
   id: number;
   percent: number;
   name: string;
@@ -13,7 +14,7 @@ export default function Business() {
  }[];
 
  return (
-  <div id="business" className="w-full snap-start bg-whiteBg overflow-hidden">
+  <div id={SECTIONS.SKILLS} className="w-full snap-start bg-whiteBg overflow-hidden">
    <div className="relative h-screen max-w-[1600px] mx-auto flex items-center justify-center overflow-hidden">
     <div className="absolute top-[40%] left-[10%] w-[30%] h-[40%] rotate-45 rounded-full bg-purple-600 shadow-purpl shadow-2xl"></div>
     <div className="absolute top-[10%] left-[30%] w-[30%] h-[40%] rotate-45 rounded-full bg-yellow-500 shadow-yellow-500 shadow-2xl  element-wave"></div>

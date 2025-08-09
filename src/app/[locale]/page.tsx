@@ -2,7 +2,7 @@ import Navbar from '@/components/Navbar';
 import Introduction from '@/components/Introduction';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
-import Business from '@/components/Business';
+import Skills from '@/components/Skills';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default async function HomePage() {
     </Navbar>
     <About />
     <Experience />
-    <Business />
+    <Skills />
    </main>
   </div>
  );
