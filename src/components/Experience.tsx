@@ -1,23 +1,24 @@
 'use client';
 import Location from '@/icons/Location';
 import { motion } from 'framer-motion';
-import { useWindowWidth } from '../hooks/UseWindowWidth';
+import { useWindowWidth } from '@/hooks/UseWindowWidth';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Grid, Pagination } from 'swiper/modules';
 import { useTranslations } from 'next-intl';
+import { SECTIONS } from '@/constants';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/grid';
 
-export default function Education() {
+export default function Experience() {
  const t = useTranslations();
  const width = useWindowWidth();
- const skills = (t.raw('skills') as { id: number; percent: number; name: string }[]) || [];
- const experience = t.raw('experience') as { id: number; job: string; stack: string; companyName: string; city: string; country: string; startDate: string; endDate: string }[];
+ const skills = (t.raw(SECTIONS.SKILLS) as { id: number; percent: number; name: string }[]) || [];
+ const experience = t.raw(SECTIONS.EXPERIENCE) as { id: number; job: string; stack: string; companyName: string; city: string; country: string; startDate: string; endDate: string }[];
 
  return (
-  <div id="education" className="w-full snap-start bg-blackBg overflow-hidden">
+  <div id={SECTIONS.EXPERIENCE} className="w-full snap-start bg-blackBg overflow-hidden">
    <div className="relative h-screen max-w-[1600px] mx-auto">
     <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[50%] h-[40%] rounded-full bg-purpl shadow-purpl shadow-2xl "></div>
     <div className="flex flex-col py-8 justify-around h-full bg-clip-padding backdrop-filter backdrop-blur-[10rem] bg-opacity-20">
