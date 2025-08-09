@@ -19,8 +19,12 @@ export default function Introduction() {
    <div className="w-[90%] mx-auto md:w-full leading-none ltr:mt-10 md:mt-24 rtl:pt-14">
     <p className="text-xl rtl:mb-4 px-4 md:px-0">{t('job')}</p>
     <div className="flex flex-wrap justify-center rtl:gap-2 rtl:flex-row md:w-[60%] flex-row md:flex-col bg-gradient-to-r ltr:from-purpl rtl:from-white ltr:to-white rtl:to-purpl bg-clip-text text-transparent">
-     <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 ltr:pr-2 md:px-0 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{t('name')}</h1>
-     <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">{t('family')}</h1>
+     <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 ltr:pr-2 md:px-0 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">
+      {t('name')}
+     </h1>
+     <h1 className="text-[2.5rem] md:text-[6rem] font-bold md:rtl:pr-1 rtl:leading-[2.8rem] md:rtl:leading-[7rem]">
+      {t('family')}
+     </h1>
     </div>
     {/* social links wrapper */}
     <div className="flex flex-wrap justify-center md:justify-normal gap-4 mt-10 md:mt-5 md:rtl:mt-8 ">
@@ -33,7 +37,13 @@ export default function Introduction() {
    </div>
 
    {/* introduction image */}
-   <Image className="w-[70%] mx-auto md:w-[32%] object-cover border-b-2 border-purpl" src="/images/arash.png" alt="photo" width={1000} height={1000} />
+   <Image
+    className="w-[70%] mx-auto md:w-[32%] object-cover border-b-2 border-purpl"
+    src="/images/arash.png"
+    alt="photo"
+    width={1000}
+    height={1000}
+   />
   </motion.div>
  );
 }

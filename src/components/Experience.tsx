@@ -15,7 +15,16 @@ export default function Experience() {
  const t = useTranslations();
  const width = useWindowWidth();
  const skills = (t.raw(SECTIONS.SKILLS) as { id: number; percent: number; name: string }[]) || [];
- const experience = t.raw(SECTIONS.EXPERIENCE) as { id: number; job: string; stack: string; companyName: string; city: string; country: string; startDate: string; endDate: string }[];
+ const experience = t.raw(SECTIONS.EXPERIENCE) as {
+  id: number;
+  job: string;
+  stack: string;
+  companyName: string;
+  city: string;
+  country: string;
+  startDate: string;
+  endDate: string;
+ }[];
 
  return (
   <div id={SECTIONS.EXPERIENCE} className="w-full snap-start bg-blackBg overflow-hidden">
@@ -31,7 +40,10 @@ export default function Experience() {
       transition={{ duration: 0.8 }}
      >
       {experience.map(({ id, job, stack, companyName, country, city, startDate, endDate }) => (
-       <div key={id} className="h-[11em] w-full md:w-[30%] p-2.5 rounded-xl transition-all duration-300 ease-out hover:bg-indigo-600 hover:text-gray-100 cursor-pointer border-b-2 border-indigo-500">
+       <div
+        key={id}
+        className="h-[11em] w-full md:w-[30%] p-2.5 rounded-xl transition-all duration-300 ease-out hover:bg-indigo-600 hover:text-gray-100 cursor-pointer border-b-2 border-indigo-500"
+       >
         <div className="flex flex-col justify-between h-full">
          <h1 className="text-lg font-medium text-center">{job}</h1>
          <div className="flex flex-col gap-1 text-center">
@@ -88,9 +100,19 @@ export default function Experience() {
      )}
 
      {/* skills progress wrapper */}
-     <div style={{ direction: 'ltr' }} className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]">
+     <div
+      style={{ direction: 'ltr' }}
+      className="flex flex-wrap text-white gap-5 w-[90%] justify-between mx-auto text-[17px]"
+     >
       {skills.map(({ id, name, percent }) => (
-       <motion.div key={id} className="w-full md:w-[45%]" initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.6 }}>
+       <motion.div
+        key={id}
+        className="w-full md:w-[45%]"
+        initial={{ opacity: 0, x: -50 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: false }}
+        transition={{ duration: 0.6 }}
+       >
         <div className="flex justify-between">
          <h1>{name}</h1>
          <h1>{percent}%</h1>

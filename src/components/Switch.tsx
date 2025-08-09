@@ -12,7 +12,10 @@ export function Switch() {
  return (
   <>
    <div className="flex items-center gap-4">
-    <div onClick={() => setIsDropDownOpen(!isDropDownOpen)} className="flex cursor-pointer gap-1 relative rtl:flex-row-reverse items-center">
+    <div
+     onClick={() => setIsDropDownOpen(!isDropDownOpen)}
+     className="flex cursor-pointer gap-1 relative rtl:flex-row-reverse items-center"
+    >
      {locale === LOCALE.EN ? (
       <>
        <Image className="w-6 h-5 object-cover" src="/images/usa.png" width={100} height={100} alt="Logo" />

@@ -16,7 +16,13 @@ export default function About() {
     <div className="absolute h-full w-[100%] bg-whiteBg bg-clip-padding backdrop-filter backdrop-blur-[6rem] bg-opacity-40"></div>
     <div className="w-[90%] relative flex flex-col-reverse md:flex-row-reverse justify-evenly md:justify-center gap-5 md:gap-20">
      {/* about wrapper */}
-     <motion.div className=" md:w-[70%]" initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: false }} transition={{ duration: 0.8 }}>
+     <motion.div
+      className=" md:w-[70%]"
+      initial={{ opacity: 0, x: 50 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={{ once: false }}
+      transition={{ duration: 0.8 }}
+     >
       <div className="leading-[18px] md:leading-8 text-justify">
        <p className="text-indigo-600 font-bold text-xl md:text-3xl mb-2">{t('about.title')}</p>
        <div className="relative">
@@ -72,7 +78,13 @@ export default function About() {
         );
        })}
       </div>
-      <Image className="w-[60%] object-cover md:w-full border-b-4 rounded-sm border-b-indigo-600" alt="" src={'/images/arash2.png'} width={300} height={500} />
+      <Image
+       className="w-[60%] object-cover md:w-full border-b-4 rounded-sm border-b-indigo-600"
+       alt=""
+       src={'/images/arash2.png'}
+       width={300}
+       height={500}
+      />
      </motion.div>
     </div>
    </div>

@@ -6,7 +6,13 @@ import { LOCALE } from '@/constants';
 
 const vazir = Vazirmatn({ subsets: ['latin'], weight: ['400', '700'] });
 
-export default async function RootLayout({ params, children }: { params: Promise<{ locale: string }>; children: ReactNode }) {
+export default async function RootLayout({
+ params,
+ children,
+}: {
+ params: Promise<{ locale: string }>;
+ children: ReactNode;
+}) {
  const { locale } = await params;
 
  return (
