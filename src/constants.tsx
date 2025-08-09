@@ -40,3 +40,10 @@ export const SOCIAL_LINKS = {
   Icon: <Mail />,
  },
 };
+
+export const SECTIONS = {
+ INTRODUCTION: 'introduction',
+ ABOUT: 'about',
+ EXPERIENCE: 'experience',
+ SKILLS: 'skills',
+};
