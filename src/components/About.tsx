@@ -2,14 +2,15 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { SECTIONS } from '@/constants';
 
-export default function Background() {
+export default function About() {
  const t = useTranslations();
- const skills = (t.raw('skills') as { id: number; name: string; percent: number }[]) || [];
+ const skills = (t.raw(SECTIONS.SKILLS) as { id: number; name: string; percent: number }[]) || [];
  const marginLeftClasses = ['ml-9', 'ml-6', 'ml-3', 'ml-1'];
 
  return (
-  <div id="background" className="w-full snap-start bg-whiteBg overflow-hidden">
+  <div id={SECTIONS.ABOUT} className="w-full snap-start bg-whiteBg overflow-hidden">
    <div className="relative h-screen max-w-[1600px] mx-auto flex items-center justify-center">
     <div className="absolute ltr:left-8 top-10 rtl:right-8 w-96 h-96 rounded-full bg-indigo-500 shadow-indigo-500 shadow-2xl element-wave"></div>
     <div className="absolute h-full w-[100%] bg-whiteBg bg-clip-padding backdrop-filter backdrop-blur-[6rem] bg-opacity-40"></div>
@@ -46,6 +47,7 @@ export default function Background() {
        })}
       </div>
      </motion.div>
+
      {/* responsive about wrapper */}
      <motion.div
       className="w-full md:w-[30%] flex justify-between items-center"
