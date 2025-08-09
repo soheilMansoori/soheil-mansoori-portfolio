@@ -84,36 +84,20 @@
  },
  "about": {
   "title": "About Me",
-  "description": "Hi there! I'm Soheil Mansouri, a passionate Full Stack Developer specializing in JavaScript technologies. I have a strong command of JavaScript and am well-versed in frameworks such as React.js, Next.js, and Node.js. My experience includes working with HTML, CSS, JavaScript, Jquery, Git ,Github, TypeScript, Node, React, Next, Vue, Express, Fastify, Mongodb, Mysql, Alpine, Sass, Bootstrap5 and Tailwind CSS, making me proficient in most JavaScript frameworks. From a young age, I developed a deep love for computers, programming, and coffee. JavaScript has captured my heart, with Go language being my second love. I thrive on tackling bugs and solving complex problems, which is what drives my passion for coding. With three years of experience in the industry, I am continually striving to enhance my skills and knowledge. My ultimate goal is to become a full-stack expert utilizing PostgreSQL, Next.js, Nest.js, TypeScript, and Tailwind CSS.",
-  "frameworks": [
-   {
-    "id": 1,
-    "name": "Next",
-    "percent": 60
-   },
-   {
-    "id": 2,
-    "name": "React",
-    "percent": 70
-   },
-   {
-    "id": 3,
-    "name": "Redux",
-    "percent": 60
-   },
-   {
-    "id": 4,
-    "name": "Tailwind",
-    "percent": 70
-   },
-   {
-    "id": 5,
-    "name": "TypeScript",
-    "percent": 80
-   }
-  ]
+  "description": "Hi there! I'm Soheil Mansouri, a passionate Full Stack Developer specializing in JavaScript technologies. I have a strong command of JavaScript and am well-versed in frameworks such as React.js, Next.js, and Node.js. My experience includes working with HTML, CSS, JavaScript, Jquery, Git ,Github, TypeScript, Node, React, Next, Vue, Express, Fastify, Mongodb, Mysql, Alpine, Sass, Bootstrap5 and Tailwind CSS, making me proficient in most JavaScript frameworks. From a young age, I developed a deep love for computers, programming, and coffee. JavaScript has captured my heart, with Go language being my second love. I thrive on tackling bugs and solving complex problems, which is what drives my passion for coding. With three years of experience in the industry, I am continually striving to enhance my skills and knowledge. My ultimate goal is to become a full-stack expert utilizing PostgreSQL, Next.js, Nest.js, TypeScript, and Tailwind CSS."
  },
- "projects": {},
+ "experience": [
+  {
+   "id": 1,
+   "job": "Web Programer",
+   "stack": "Frontend React Developer",
+   "companyName": "Hoshmand Calan Dade",
+   "city": "Tehran",
+   "country": "Iran",
+   "startDate": "2024",
+   "endDate": "Present"
+  }
+ ],
  "skills": [
   {
    "id": 1,
