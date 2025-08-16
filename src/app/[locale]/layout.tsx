@@ -12,7 +12,7 @@ export async function generateMetadata({
 }: {
  params: { locale: (typeof LOCALE)[keyof typeof LOCALE] };
 }): Promise<Metadata> {
- const { locale } = params;
+ const { locale } = await params;
 
  return {
   title: locale === LOCALE.FA ? 'سهیل منصوری' : 'Soheil Mansoori',
