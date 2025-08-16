@@ -3,11 +3,6 @@ import Introduction from '@/components/Introduction';
 import About from '@/components/About';
 import Experience from '@/components/Experience';
 import Skills from '@/components/Skills';
-import { Metadata } from 'next';
-
-export const metadata: Metadata = {
- title: 'Soheil Mansoori',
-};
 
 export default async function HomePage() {
  return (

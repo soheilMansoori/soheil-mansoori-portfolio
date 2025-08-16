@@ -6,6 +6,13 @@ import { LOCALE } from '@/constants';
 
 const vazir = Vazirmatn({ subsets: ['latin'], weight: ['400', '700'] });
 
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+ title: 'Soheil Mansoori',
+ icons: '/images/logo-white.png',
+};
+
 export default async function RootLayout({
  params,
  children,
