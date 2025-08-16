@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import Berger from '@/icons/Berger';
 import ArrowRight from '@/icons/ArrowRight';
