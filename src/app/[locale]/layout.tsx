@@ -2,16 +2,24 @@ import '@/styles/globals.css';
 import type { ReactNode } from 'react';
 import { Vazirmatn } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
+import { Metadata } from 'next';
 import { LOCALE } from '@/constants';
 
 const vazir = Vazirmatn({ subsets: ['latin'], weight: ['400', '700'] });
 
-import { Metadata } from 'next';
+export async function generateMetadata({
+ params,
+}: {
+ params: { locale: (typeof LOCALE)[keyof typeof LOCALE] };
+}): Promise<Metadata> {
+ const { locale } = params;
 
-export const metadata: Metadata = {
- title: 'Soheil Mansoori',
- icons: '/images/logo-white.png',
-};
+ return {
+  title: locale === LOCALE.FA ? 'سهیل منصوری' : 'Soheil Mansoori',
+  description: locale === LOCALE.FA ? 'مهندس نرم‌افزار و توسعه‌دهنده وب' : 'Software Engineer and Web Developer',
+  icons: '/images/logo-white.png',
+ };
+}
 
 export default async function RootLayout({
  params,
